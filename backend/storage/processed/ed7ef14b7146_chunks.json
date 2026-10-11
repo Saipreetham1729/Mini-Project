@@ -1,0 +1,14 @@
+[
+  {
+    "chunk_id": "ed7ef14b7146_p1_c0",
+    "text": "VARDHAMAN COLLEGE OF ENGINEERING (AUTONOMOUS) Affiliated to JNTUH, Approved by AICTE, Accredited by NAAC with A++ Grade, ISO 9001:2015 Certified Kacharam, Shamshabad, Hyderabad \u2013 501218, Telangana, India. ASSIGNMENT -1 Branch & Section: III B.Tech. I Semester (CSD) R22 Academic Year: 2026-27 Course: OTML A8751 Total Marks: 10 M Name of the Student: Roll No: Date of submission: Signature of the faculty Name of the CourseInstructor: Instructions: A. Answer all the questions, and each question carries 5 marks. B. Refer to the textbooks/reference books listed below. C. You must print this page and start answering only in A4 sheets including this page. D. Note:- Last date for submission is 25.07.2026 Q. No. Questions CO# BL# 1 State Gradient Descent Function, derive the iteration for \ud835\udf03(1),\ud835\udf03(2),\ud835\udf03(3) by using X = {2,4,6} and Y = {2,8,10} where learning value \ud835\udf03= 0.2 and \ud835\udf030 = 0 CO1 L1 2 How can we verify if an optimization problem is convex? Discuss the role of the Hessian and conditions for convexity. CO1 L1 3 Discuss the concept of Empirical Risk Minimization (ERM) and elaborate on its relationship with loss functions CO1 L1 4 Fit a straight-line Y = \u03b8 X to the data points X =",
+    "page_number": 1,
+    "word_count": 200
+  },
+  {
+    "chunk_id": "ed7ef14b7146_p1_c1",
+    "text": "Hessian and conditions for convexity. CO1 L1 3 Discuss the concept of Empirical Risk Minimization (ERM) and elaborate on its relationship with loss functions CO1 L1 4 Fit a straight-line Y = \u03b8 X to the data points X = {1,2} and Y = {2,3} using the vectorized general solution. Clearly construct the feature matrix for the observations CO1 L1 5 State and derive the normal equation for linear regression: \u03b8 = (X\u1d40X)\u207b\u00b9 X\u1d40y CO1 L2 6 Given a prior distribution p(\u03b8) = N(\u03bc\u2080, \u03a3\u2080) and a likelihood function p(y|X,\u03b8) = N(X\u03b8, \u03c3\u00b2I), derive the mathematical expressions for the posterior mean \u03bc_post and the posterior covariance \u03a3_post CO1 L2 START WRITING ANSWERS FROM HERE",
+    "page_number": 1,
+    "word_count": 114
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "chunk_id": "72c238ecc2f0_p1_c0",
+    "text": "Sample Document: Greenfield College Library Purpose: This short document is designed to test document-based question answering and evidence verification in ContextGuard. 1. Opening Hours The Greenfield College Library is open from 8:30 AM to 7:00 PM Monday through Friday. On Saturdays, it is open from 9:00 AM to 1:00 PM. The library is closed on Sundays and public holidays. 2. Membership Currently enrolled students and college staff can register for library membership using their college ID card. Membership is free. Visitors who are not students or staff may use the reading room only after receiving permission from the librarian. 3. Borrowing Rules Students may borrow up to three books at a time for 14 days. Staff may borrow up to five books at a time for 21 days. Reference books and current newspapers cannot be taken outside the library. 4. Late Returns A fine of I5 per book per day is charged for overdue student books. For example, returning one student book three days late results in a fine of I15. A student who loses a book must report the loss to the librarian and pay the replacement cost. 5. Digital Resources Library members can access e-books and academic journals",
+    "page_number": 1,
+    "word_count": 200
+  },
+  {
+    "chunk_id": "72c238ecc2f0_p1_c1",
+    "text": "student book three days late results in a fine of I15. A student who loses a book must report the loss to the librarian and pay the replacement cost. 5. Digital Resources Library members can access e-books and academic journals through the college library portal. To sign in, members use their college email address. The library help desk can assist with login problems during opening hours. End of document.",
+    "page_number": 1,
+    "word_count": 69
+  }
+]

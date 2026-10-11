@@ -1,0 +1,22 @@
+[
+  {
+    "question": "What is Retrieval-Augmented Generation?",
+    "notes": "Clean, fully-supported answer -- page 1 defines it directly."
+  },
+  {
+    "question": "Why do large language models hallucinate?",
+    "notes": "Clean, fully-supported answer -- page 1 explains this directly."
+  },
+  {
+    "question": "How does RAG reduce hallucination?",
+    "notes": "Fully supported, but the source itself says RAG reduces rather than eliminates hallucination -- good for showing nuanced claims."
+  },
+  {
+    "question": "What are the common causes of RAG failures?",
+    "notes": "Page 2 lists five causes -- good multi-claim answer for the Verification page."
+  },
+  {
+    "question": "What metrics can be used to evaluate faithfulness in RAG outputs?",
+    "notes": "Page 3 lists several method families -- pairs well with the Methodology page."
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "chunk_id": "d9506de062dd_p1_c0",
+    "text": "Retrieval-Augmented Generation: An Overview What is Retrieval-Augmented Generation? Retrieval-Augmented Generation, or RAG, is an architecture that combines a retrieval system with a text-generation model. Instead of relying only on knowledge encoded in the model's parameters during training, a RAG system first retrieves relevant passages from an external knowledge source -- such as a document collection or a database -- and then provides those passages to the generation model as context. The two core components are the retriever, which finds relevant evidence for a given query, and the generator, which produces a natural-language answer conditioned on that evidence. This architecture was introduced as a way to give language models access to information that changes over time or is too specific to have been memorized during training, without requiring the model itself to be retrained. Why Do Language Models Hallucinate? Large language models generate text by predicting the most statistically likely next token, not by consulting a verified source of facts. When a model is asked about something it was not trained on, or something it recalls imperfectly, it can still produce a fluent, confident-sounding answer that is factually wrong. This behavior is commonly called hallucination: the model states something with no",
+    "page_number": 1,
+    "word_count": 200
+  },
+  {
+    "chunk_id": "d9506de062dd_p1_c1",
+    "text": "a model is asked about something it was not trained on, or something it recalls imperfectly, it can still produce a fluent, confident-sounding answer that is factually wrong. This behavior is commonly called hallucination: the model states something with no grounding in any actual source, but phrased no differently than a true statement would be. Hallucination is considered especially risky in applications where users are likely to trust an answer at face value, such as medical, legal, or educational tools, because nothing about the surface form of a hallucinated sentence distinguishes it from a correct one.",
+    "page_number": 1,
+    "word_count": 96
+  },
+  {
+    "chunk_id": "d9506de062dd_p2_c2",
+    "text": "How RAG Reduces Hallucination By grounding a generated answer in retrieved evidence, RAG reduces -- but does not eliminate -- hallucination. The model is given real, retrieved text to draw from, which makes it more likely to produce an answer that is actually supported by a source. However, a generated answer can still introduce claims that go beyond what was retrieved, especially when the model paraphrases loosely, combines multiple retrieved facts incorrectly, or fills a gap in the retrieved evidence with something plausible-sounding instead of leaving it unanswered. Common Causes of RAG Failures RAG systems can fail to produce a faithful answer for several distinct reasons. Retrieval failure occurs when nothing relevant to the question was retrieved at all. Insufficient context occurs when retrieval found something relevant, but not enough information to fully answer the question. Context misinterpretation occurs when relevant evidence was retrieved, but the generation model drew the wrong conclusion from it. Unsupported generation occurs when the model introduces a claim that has no basis in the retrieved evidence at all, effectively hallucinating on top of a grounded answer. Conflicting evidence occurs when different retrieved passages disagree with each other, leaving the model to reconcile -- or fail",
+    "page_number": 2,
+    "word_count": 200
+  },
+  {
+    "chunk_id": "d9506de062dd_p2_c3",
+    "text": "introduces a claim that has no basis in the retrieved evidence at all, effectively hallucinating on top of a grounded answer. Conflicting evidence occurs when different retrieved passages disagree with each other, leaving the model to reconcile -- or fail to reconcile -- a contradiction.",
+    "page_number": 2,
+    "word_count": 45
+  },
+  {
+    "chunk_id": "d9506de062dd_p3_c4",
+    "text": "Evaluating Faithfulness in RAG Outputs Because hallucination in RAG systems can happen at the claim level rather than the whole answer, evaluation is usually done by breaking a generated answer into individual claims and checking each one against the retrieved evidence. Several families of methods exist for this. Lexical overlap methods, such as ROUGE-L, measure how much wording a claim shares with the evidence. Natural language inference methods use a model trained to judge whether one piece of text logically entails another, applied here to test whether the evidence entails the claim. LLM-judge methods prompt a separate language model to directly verdict each claim as supported, partially supported, or unsupported. RAGAS faithfulness follows a related but distinct methodology, asking for a strictly binary judgment per claim. Self-consistency methods take a different approach entirely: instead of checking a claim against retrieved evidence, they check whether the same claim reappears when the model is asked the same question again independently, on the theory that hallucinated claims tend to be less stable across independent generations than genuinely grounded ones. No single method perfectly predicts human judgment of faithfulness, which is why comparing multiple methods against real human-labeled examples -- rather than trusting any",
+    "page_number": 3,
+    "word_count": 200
+  },
+  {
+    "chunk_id": "d9506de062dd_p3_c5",
+    "text": "theory that hallucinated claims tend to be less stable across independent generations than genuinely grounded ones. No single method perfectly predicts human judgment of faithfulness, which is why comparing multiple methods against real human-labeled examples -- rather than trusting any one method in isolation -- is considered good practice when building a faithfulness evaluation system.",
+    "page_number": 3,
+    "word_count": 55
+  }
+]

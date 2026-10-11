@@ -1,0 +1,40 @@
+# Secrets and environment variables
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+venv/
+.venv/
+env/
+*.egg-info/
+
+# Node.js
+node_modules/
+dist/
+build/
+coverage/
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.idea/
+
+# Local environment files
+*.local
